@@ -37,7 +37,7 @@ const todayEvents = ref([])
 const futureEvents = ref([])
 
 onMounted(async () => {
-  const res = await fetch('/sample.ics')
+  const res = await fetch(`${import.meta.env.BASE_URL}sample.ics`)
   const text = await res.text()
   const allEvents = parseICS(text)
   console.log(allEvents );
