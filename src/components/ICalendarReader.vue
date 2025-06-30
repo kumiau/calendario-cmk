@@ -2,13 +2,13 @@
   <div class="p-4">
     <div v-if="todayEvents.length" class="mb-6">
       <h2 class="text-xl font-bold mb-2">Eventos de hoy</h2>
-      <ul class="space-y-2 list-none p-0">
+      <ul class="space-y-3 list-none p-0">
         <li
           v-for="(event, index) in todayEvents"
           :key="'today-' + index"
-          class="p-3 rounded bg-emerald-100 dark:bg-emerald-800"
+          class="p-4 rounded bg-emerald-200 dark:bg-emerald-700 shadow-lg"
         >
-          <EventCard :event="event" />
+          <EventCard :event="event" compact />
         </li>
       </ul>
     </div>
