@@ -4,9 +4,11 @@ import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 
 // https://vitejs.dev/config/
+
 export default defineConfig({
+  base: '/calendario-cmk/',
   plugins: [vue(), UnoCSS(), VitePWA({
-    registerType: 'prompt',
+    registerType: 'autoUpdate',
     injectRegister: false,
 
     pwaAssets: {
