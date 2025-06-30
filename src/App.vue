@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import PWABadge from './components/PWABadge.vue'
+  import PWABadge from './components/PWABadge.vue'
+  import ICalendarReader from './components/ICalendarReader.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/favicon.svg" class="logo" alt="calendario-cmk logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="calendario-cmk" />
+  <main class="max-w-2xl mx-auto">
+    <div>
+      <h1>
+        <a href="https://meditacionencolombia.org" target="_blank">
+          <img src="/LogoColor.png" class="w-full" alt="calendario-cmk logo" />
+        </a>
+      </h1>
+    </div>
+    <ICalendarReader />
+  </main>
   <PWABadge />
 </template>
 
